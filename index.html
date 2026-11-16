@@ -145,7 +145,6 @@
     <button id="restartBtn" style="padding: 10px 20px; font-size: 16px; font-weight: bold; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; display: none;">🔄 Play Again</button>
 </div>
 const restartBtn = document.getElementById("restartBtn");
-
 function restartGame() {
     score = 0;
     timeLeft = gameDuration;
@@ -153,8 +152,6 @@ function restartGame() {
     scoreDisplay.innerText = score;
     timerDisplay.innerText = timeLeft;
     restartBtn.style.display = "none"; // Hide button while playing
-
     // Restart your game loops / timers here!
 }
-
 restartBtn.addEventListener("click", restartGame);
